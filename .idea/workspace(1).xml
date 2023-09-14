@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f52b27c5-d273-4e3d-8c1c-b0b67fe45b5d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/presenter/BookPresenter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/views/View.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2TkkQYt1uzmddfZp4JWMxbX0QXK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sebastiancanon/Documents/Uptc/S2-2023/Programación 2/Programs/Library&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/sebas/IdeaProjects/untitled/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sebas\IdeaProjects\untitled" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Persistencia" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f52b27c5-d273-4e3d-8c1c-b0b67fe45b5d" name="Changes" comment="" />
+      <created>1691594453192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691594453192</updated>
+      <workItem from="1691594454198" duration="4862000" />
+      <workItem from="1691643230506" duration="165000" />
+      <workItem from="1691694390090" duration="1297000" />
+      <workItem from="1691816567648" duration="140000" />
+      <workItem from="1691875625860" duration="618000" />
+      <workItem from="1691879437551" duration="2083000" />
+      <workItem from="1691882569725" duration="364000" />
+      <workItem from="1691883041725" duration="667000" />
+      <workItem from="1691883793564" duration="510000" />
+      <workItem from="1691884307406" duration="124000" />
+      <workItem from="1692112257312" duration="49000" />
+      <workItem from="1692114000523" duration="8021000" />
+      <workItem from="1692127874483" duration="891000" />
+      <workItem from="1692129658706" duration="138000" />
+      <workItem from="1692145598851" duration="614000" />
+      <workItem from="1692158852055" duration="19000" />
+      <workItem from="1692197576574" duration="1384000" />
+      <workItem from="1692200130537" duration="5332000" />
+      <workItem from="1692232309787" duration="5533000" />
+      <workItem from="1692290762451" duration="2081000" />
+      <workItem from="1692364167160" duration="101000" />
+      <workItem from="1692371996181" duration="3292000" />
+      <workItem from="1692375608458" duration="83000" />
+      <workItem from="1692718447316" duration="849000" />
+      <workItem from="1692719687486" duration="4850000" />
+      <workItem from="1692969619771" duration="3482000" />
+      <workItem from="1692976783260" duration="5081000" />
+      <workItem from="1693189529641" duration="1100000" />
+      <workItem from="1693266657110" duration="1629000" />
+      <workItem from="1693272122865" duration="396000" />
+      <workItem from="1693354349311" duration="2543000" />
+      <workItem from="1693367598919" duration="18000" />
+      <workItem from="1693367619011" duration="377000" />
+      <workItem from="1693408143115" duration="6756000" />
+      <workItem from="1693419174347" duration="1977000" />
+      <workItem from="1693496506042" duration="1167000" />
+      <workItem from="1693507367086" duration="2944000" />
+      <workItem from="1693510449080" duration="889000" />
+      <workItem from="1693511984773" duration="623000" />
+      <workItem from="1693512616296" duration="1954000" />
+      <workItem from="1693574483074" duration="1549000" />
+      <workItem from="1693793880949" duration="1028000" />
+      <workItem from="1693861085490" duration="3223000" />
+      <workItem from="1693864322848" duration="3095000" />
+      <workItem from="1693867586149" duration="29000" />
+      <workItem from="1693871828825" duration="48000" />
+      <workItem from="1693872054191" duration="443000" />
+      <workItem from="1693927455325" duration="4925000" />
+      <workItem from="1693945429755" duration="1742000" />
+      <workItem from="1693947216185" duration="6313000" />
+      <workItem from="1693972414221" duration="118000" />
+      <workItem from="1693973483146" duration="338000" />
+      <workItem from="1694013709823" duration="2797000" />
+      <workItem from="1694016590924" duration="618000" />
+      <workItem from="1694017213424" duration="95000" />
+      <workItem from="1694026339157" duration="457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.StreamCorruptedException" package="java.io" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

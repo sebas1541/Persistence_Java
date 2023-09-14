@@ -1,0 +1,37 @@
+<list>
+  <book>
+    <ID>1</ID>
+    <title>Cien años de soledad</title>
+    <author>Gabriel García Márquez</author>
+    <knowledgeArea>Literatura</knowledgeArea>
+    <state>true</state>
+  </book>
+  <book>
+    <ID>2</ID>
+    <title>El coronel no tiene quién le escriba</title>
+    <author>Gabriel García Márquez</author>
+    <knowledgeArea>Literatura</knowledgeArea>
+    <state>true</state>
+  </book>
+  <book>
+    <ID>3</ID>
+    <title>Don Quijote</title>
+    <author>Miguel de Cervantes</author>
+    <knowledgeArea>Literatura</knowledgeArea>
+    <state>true</state>
+  </book>
+  <book>
+    <ID>4</ID>
+    <title>Moby-Dick</title>
+    <author>Herman Melville</author>
+    <knowledgeArea>Literatura</knowledgeArea>
+    <state>true</state>
+  </book>
+  <book>
+    <ID>5</ID>
+    <title>La Odisea</title>
+    <author>Homero</author>
+    <knowledgeArea>Literatura</knowledgeArea>
+    <state>true</state>
+  </book>
+</list>
