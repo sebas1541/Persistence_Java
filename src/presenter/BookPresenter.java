@@ -163,7 +163,7 @@ public class BookPresenter {
                     } else if (fileOption.equals("2")) {
                         webServiceRequest("json");
                     } else {
-                        System.out.printf("La opción no es correcta\n");
+                        view.showMessage("La opción no es correcta\n");
                     }
                     break;
 
@@ -183,10 +183,12 @@ public class BookPresenter {
 
 
         if (lastCase1Execution != null) {
-            System.out.println("Last bibliographic collection update " + lastCase1Execution);
+
+            view.showMessage("Last bibliographic collection update " + lastCase1Execution);
         }
         if (lastCase2Execution != null) {
-            System.out.println("Last book addition update: " + lastCase2Execution);
+
+            view.showMessage("Last book addition update: " + lastCase2Execution);
         }
 
         int option = view.readInt("Main Menu\n1. Create Bibliographic Collection\n2. Insert Book\n3. Edit Book\n4. Erase Book\n5. Search Book\n6. Show All Books\n7. Assign Book to Collection\n8. Print Books to File\n9. Create Collection File\n10. Delete Collection File\n11. Create Binary File\n12. Read Binary File\n13. Create Serialized Library\n14. Read Library XML file\n15. Write XML Library\n16. Leer XML (CÓDIGO PROFESORA)\n17. Read any XML File\n18. Serialize XMl\n19. Deserialize XML\n20. Serialize JSON\n21. Read JSON\n22. Generate Files JSON or XMl\n23. ReadXML\n24. Read JSON\n25. End program");
@@ -378,10 +380,8 @@ public class BookPresenter {
             prop.setProperty("password", "password123");
             prop.store(outputStream, "Setup File");
         } catch (FileNotFoundException ex) {
-            System.out.println("File not found");
             ex.printStackTrace();
         } catch (IOException ex) {
-            System.out.println("Input output error");
             ex.printStackTrace();
         }
     }
@@ -405,10 +405,8 @@ public class BookPresenter {
 
             return data;
         } catch (FileNotFoundException ex) {
-            System.out.println("File not found");
             ex.printStackTrace();
         } catch (IOException ex) {
-            System.out.println("Input output exception");
             ex.printStackTrace();
         }
         return null;
@@ -490,23 +488,22 @@ public class BookPresenter {
             int numBooks = dataInput.readInt();
             int numCollections = dataInput.readInt();
 
-            System.out.println("Number of books: " + numBooks);
-            System.out.println("Number of collections: " + numCollections);
+            view.showMessage("Number of books: " + numBooks);
+            view.showMessage("Number of collections: " + numCollections);
 
             Book readBook = (Book) objectInput.readObject();
 
-            System.out.println("1 Book Properties:");
-            System.out.println("ID: " + readBook.getID());
-            System.out.println("Title: " + readBook.getTitle());
-            System.out.println("Author: " + readBook.getAuthor());
-            System.out.println("Knowledge Area: " + readBook.getKnowledgeArea());
-            System.out.println("State: " + readBook.isState());
+
+            view.showMessage("1 Book Properties:");
+            view.showMessage("ID: " + readBook.getID());
+            view.showMessage("Title: " + readBook.getTitle());
+            view.showMessage("Author: " + readBook.getAuthor());
+            view.showMessage("Knowledge Area: " + readBook.getKnowledgeArea());
+            view.showMessage("State: " + readBook.isState());
 
         } catch (FileNotFoundException ex) {
-            System.out.println("File not found");
             ex.printStackTrace();
         } catch (IOException ex) {
-            System.out.println("Input output exception");
             ex.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -524,10 +521,10 @@ public class BookPresenter {
             objectOutput.writeObject(library);
 
         } catch (FileNotFoundException ex) {
-            System.out.println("File not found");
+            view.showMessage("File not found");
             ex.printStackTrace();
         } catch (IOException ex) {
-            System.out.println("Input output error");
+            view.showMessage("Input output error");
             ex.printStackTrace();
         }
     }
@@ -570,21 +567,21 @@ public class BookPresenter {
 
                 Element libro = listaLibros.get(i);
 
-                System.out.println("\nElemento :" + libro.getName());
-                System.out.println("Id: " + libro.getChild("id").getText());
-                System.out.println("Nombre: " + libro.getChild("titulo").getText());
+                view.showMessage("\nElemento :" + libro.getName());
+                view.showMessage("Id: " + libro.getChild("id").getText());
+                view.showMessage("Nombre: " + libro.getChild("titulo").getText());
 
                 Element autores = libro.getChild("autores");
 
-                System.out.println("\nElemento :" + autores.getName());
+                view.showMessage("\nElemento :" + autores.getName());
 
                 Attribute atributo = autores.getAttribute("numero");
-                System.out.println("Número de autores: " + atributo.getValue());
+                view.showMessage("Número de autores: " + atributo.getValue());
                 List<Element> autoresLista = autores.getChildren("autor");
                 for (int j = 0; j < autoresLista.size(); j++) {
                     Element autor = autoresLista.get(j);
 
-                    System.out.println("Nombre: " + autor.getChild("nombre").getText());
+                    view.showMessage("Nombre: " + autor.getChild("nombre").getText());
                 }
             }
 
@@ -660,9 +657,9 @@ public class BookPresenter {
             List<Element> bookElements = rootElement.getChildren();
 
             for (Element bookElement : bookElements) {
-                System.out.println("\nElement: " + bookElement.getName());
-                System.out.println("ID: " + bookElement.getChildText("id"));
-                System.out.println("Title: " + bookElement.getChildText("title"));
+                view.showMessage("\nElement: " + bookElement.getName());
+                view.showMessage("ID: " + bookElement.getChildText("id"));
+                view.showMessage("Title: " + bookElement.getChildText("title"));
 
             }
         } catch (JDOMException e) {
@@ -675,9 +672,9 @@ public class BookPresenter {
     public void readAnyXMLFile(Element element, int cont) {
         String sangria = "   ".repeat(cont);
 
-        System.out.println(sangria + " " + element.getName());
+        view.showMessage(sangria + " " + element.getName());
         if (element.getChildren().isEmpty()) {
-            System.out.println(sangria + "     " + element.getValue());
+            view.showMessage(sangria + "     " + element.getValue());
         }
 
         for (Element childElement : element.getChildren()) {
@@ -798,12 +795,12 @@ public class BookPresenter {
                 String knowledgeArea = bookObject.getString("knowledgeArea");
                 boolean state = bookObject.getBoolean("state");
 
-                System.out.println("Book ID: " + id);
-                System.out.println("Title: " + title);
-                System.out.println("Author: " + author);
-                System.out.println("Knowledge Area: " + knowledgeArea);
-                System.out.println("State: " + state);
-                System.out.println();
+                view.showMessage("Book ID: " + id);
+                view.showMessage("Title: " + title);
+                view.showMessage("Author: " + author);
+                view.showMessage("Knowledge Area: " + knowledgeArea);
+                view.showMessage("State: " + state);
+                view.showMessage("");
             }
 
 
@@ -833,7 +830,6 @@ public class BookPresenter {
 
                 while ((inputLine = in.readLine()) != null) {
                     outputStream.write(inputLine.getBytes());
-                    System.out.println(response.append(inputLine));
                 }
                 in.close();
             }
@@ -870,10 +866,10 @@ public class BookPresenter {
             Element precipitationElement = rootElement.getChild("precipitation");
             String precipitationMode = precipitationElement.getAttributeValue("mode");
 
-            System.out.println("Lugar: " + city + ", " + country);
-            System.out.println("temperatura hoy " + temperature + "°C");
-            System.out.println("direccion y velocidad de viento: " + windSpeed + " metros por segundo m/s " + windDirection);
-            System.out.println("precipitaciones: " + precipitationMode);
+            view.showMessage("Lugar: " + city + ", " + country);
+            view.showMessage("temperatura hoy " + temperature + "°C");
+            view.showMessage("direccion y velocidad de viento: " + windSpeed + " metros por segundo m/s " + windDirection);
+            view.showMessage("precipitaciones: " + precipitationMode);
 
 
         } catch (JDOMException e) {
@@ -905,10 +901,10 @@ public class BookPresenter {
             double temperatureFeelsLike = main.getJsonNumber("feels_like").doubleValue();
             double maxTemperature = main.getJsonNumber("temp_max").doubleValue();
 
-            System.out.println("lugar: " + city);
-            System.out.println("clima hoy " + weatherDescription);
-            System.out.println("sensacion térmica " + temperatureFeelsLike);
-            System.out.println("tempeeratura maxima: " + maxTemperature);
+            view.showMessage("lugar: " + city);
+            view.showMessage("clima hoy " + weatherDescription);
+            view.showMessage("sensacion térmica " + temperatureFeelsLike);
+            view.showMessage("tempeeratura maxima: " + maxTemperature);
 
         } catch (IOException e) {
             e.printStackTrace();
